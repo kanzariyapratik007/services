@@ -41,11 +41,11 @@ export default function Register() {
     try {
       setLoading(true);
 
-      await axios.post("http://127.0.0.1:8000/api/register/", {
-        username,
-        email,
+            await axios.post("https://servicepratik.pythonanywhere.com/api/register/", {
+     username,
+         email,
         phone,
-        password
+         password
       });
 
       alert("Account created successfully!");
