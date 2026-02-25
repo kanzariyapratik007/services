@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "https://servicepratik.pythonanywhere.com/api/", // 🔥 PythonAnywhere URL
+    baseURL: "https://servicepratik.pythonanywhere.com/api/",
 });
 
 let isRefreshing = false;
