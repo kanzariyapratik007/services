@@ -26,7 +26,7 @@ export default function Dashboard() {
     }
 
     axios
-      .get("http://127.0.0.1:8000/api/dashboard/", {
+      .get("https://servicepratik.pythonanywhere.com/api/dashboard/", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => setData(res.data))
