@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
-import "../styles/voterServices.css";
+import "../styles/VoterServices.css";
 
 export default function VoterServices() {
 
