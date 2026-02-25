@@ -30,7 +30,7 @@ export default function RationServices() {
       try {
 
         const res = await axios.get(
-          "http://127.0.0.1:8000/api/services/list/?category=ration",
+          "https://servicepratik.pythonanywhere.com/api/services/list/?category=ration",
           {
             headers: { Authorization: `Bearer ${token}` }
           }

@@ -21,7 +21,7 @@ export default function VehicleServices() {
     const fetchServices = async () => {
       try {
         const res = await axios.get(
-          "http://127.0.0.1:8000/api/services/list/?category=vehicle",
+          "https://servicepratik.pythonanywhere.com/api/services/list/?category=vehicle",
           {
             headers: { Authorization: `Bearer ${token}` }
           }

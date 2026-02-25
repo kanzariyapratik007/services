@@ -21,7 +21,7 @@ export default function DLServices() {
     const fetchServices = async () => {
       try {
         const res = await axios.get(
-          "http://127.0.0.1:8000/api/services/list/?category=driving",
+          "https://servicepratik.pythonanywhere.com/api/services/list/?category=driving",
           {
             headers: { Authorization: `Bearer ${token}` }
           }

@@ -8,3 +8,5 @@ __pycache__/
 db.sqlite3 
 >>>>>>> 544eb87862f8931681fe4c5ceb8c4e4ab5975597
 .env 
+.vercel
+.env*.local

@@ -58,7 +58,7 @@ export default function AadhaarServices() {
       setLoading(true);
 
       await axios.post(
-        "http://127.0.0.1:8000/api/services/automated/",
+        "https://servicepratik.pythonanywhere.com/api/services/automated/",
         {
           service_name: service.name,
           amount: service.amount

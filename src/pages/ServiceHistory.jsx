@@ -15,7 +15,7 @@ export default function ServiceHistory() {
     if (!token) return;
 
     axios
-      .get("http://127.0.0.1:8000/api/services/history/", {
+      .get("https://servicepratik.pythonanywhere.com/api/services/history/", {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then((res) => {

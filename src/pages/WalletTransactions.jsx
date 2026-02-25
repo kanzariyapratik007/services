@@ -30,7 +30,7 @@ export default function WalletTransactions() {
       }
 
       const res = await axios.get(
-        `http://127.0.0.1:8000/api/wallet/transactions/?${params.toString()}`,
+        `https://servicepratik.pythonanywhere.com/api/wallet/transactions/?${params.toString()}`,
         {
           headers: { Authorization: `Bearer ${token}` }
         }

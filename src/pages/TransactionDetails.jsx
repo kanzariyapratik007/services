@@ -12,7 +12,7 @@ export default function TransactionDetails() {
   useEffect(() => {
     const token = localStorage.getItem("access");
 
-    axios.get("http://127.0.0.1:8000/api/wallet/transactions/", {
+    axios.get("https://servicepratik.pythonanywhere.com/api/wallet/transactions/", {
       headers: { Authorization: `Bearer ${token}` }
     })
     .then(res => {

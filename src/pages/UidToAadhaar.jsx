@@ -40,7 +40,7 @@ export default function UidToAadhaar() {
       setLoading(true);
 
       await axios.post(
-        "http://127.0.0.1:8000/api/services/manual/",
+        "https://servicepratik.pythonanywhere.com/api/services/manual/",
         {
           service_name: "UID to Aadhaar PDF",
           amount: amount,

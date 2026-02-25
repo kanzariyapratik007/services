@@ -46,7 +46,7 @@ export default function ServiceForm() {
 
       try {
         const res = await axios.get(
-          `http://127.0.0.1:8000/api/services/list/`,
+          `https://servicepratik.pythonanywhere.com/api/services/list/`,
           {
             headers: { Authorization: `Bearer ${token}` }
           }
