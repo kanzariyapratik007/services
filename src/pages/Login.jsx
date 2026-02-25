@@ -38,10 +38,10 @@ export default function Login() {
       localStorage.removeItem("access");
       localStorage.removeItem("refresh");
 
-      const res = await axios.post(
-        "http://127.0.0.1:8000/api/login/",
-        form
-      );
+          const res = await axios.post(
+         "https://servicepratik.pythonanywhere.com/api/login/",
+       form
+       );
 
       localStorage.setItem("access", res.data.access);
       localStorage.setItem("refresh", res.data.refresh);
