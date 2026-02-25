@@ -4,7 +4,7 @@ import axios from "axios";
 
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
-import "../styles/aadhaarServices.css";
+import "../styles/AadhaarServices.css";   // સાચું (કેપિટલ 'A')
 
 export default function AadhaarServices() {
 
