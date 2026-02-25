@@ -41,7 +41,8 @@ API.interceptors.response.use(
 
         const originalRequest = error.config;
 
-        if (error.response ? .status === 401 && !originalRequest._retry) {
+        // 🔥 આ લાઈન બદલો (optional chaining દૂર કરો)
+        if (error.response && error.response.status === 401 && !originalRequest._retry) {
 
             const refreshToken = localStorage.getItem("refresh");
 
