@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark .main-content {
+  background-color: #1e1e2f;
+}
+
+body.dark .stat-card,
+body.dark .ration-card,
+body.dark .wallet-card,
+body.dark .print-card {
+  background: #2a2a3d;
+  color: white;
+}
+
+body.dark .sidebar {
+  background: #0f0f1a;
+}
+
+body.dark .topbar {
+  background: linear-gradient(135deg, #1f1f3a, #2c2c54);
+}

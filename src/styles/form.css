@@ -1,0 +1,151 @@
+/* ================= FORM CONTAINER ================= */
+
+.form-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px;
+  margin-top: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= HEADER ================= */
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f2f2f2;
+  padding-bottom: 15px;
+}
+
+.form-header h2 {
+  color: #ff6a00;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* ================= BUTTON ================= */
+
+.applied-btn {
+  background: #ff6a00;
+  color: white;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.applied-btn:hover {
+  background: #e55d00;
+}
+
+/* ================= GRID ================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* ================= FORM GROUP ================= */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* FULL WIDTH FIELDS */
+.full-width {
+  grid-column: span 3;
+}
+
+/* ================= LABEL ================= */
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.3px;
+}
+
+/* Required Star */
+.form-group label::after {
+  content: " *";
+  color: #e63946;
+  font-weight: 700;
+}
+
+/* ================= INPUTS ================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 11px 12px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  background-color: #fafafa;
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #6a11cb;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.15);
+  outline: none;
+}
+
+/* File Input Fix */
+.form-group input[type="file"] {
+  padding: 6px;
+  background-color: #fff;
+}
+
+/* ================= SUBMIT BUTTON ================= */
+
+.submit-btn {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .full-width {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+}

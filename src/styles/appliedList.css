@@ -1,0 +1,80 @@
+.list-page {
+  padding: 40px;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.list-header h2 {
+  font-size: 22px;
+}
+
+.badge {
+  margin-left: 10px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge.yellow {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.badge.green {
+  background: #d4edda;
+  color: #155724;
+}
+
+.badge.red {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.apply-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #218838;
+}
+
+.table-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #e9ecef;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.no-data {
+  text-align: center;
+  color: gray;
+}

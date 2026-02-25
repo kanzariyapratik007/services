@@ -1,0 +1,160 @@
+.wallet-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1e3a8a, #0f172a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* ================= INITIAL CARD ================= */
+
+.wallet-card-premium {
+  width: 420px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+}
+
+.wallet-card-premium h2 {
+  margin-bottom: 30px;
+}
+
+.amount-input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 12px 16px;
+  margin-bottom: 25px;
+}
+
+.amount-input-box span {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.amount-input-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg,#6a11cb,#2575fc);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= UPI PAYMENT CARD ================= */
+
+.upi-payment-card {
+  width: 420px;
+  background: #1e293b;
+  border-radius: 22px;
+  padding: 35px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+  animation: fadeIn 0.4s ease;
+}
+
+.upi-header p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.upi-header h3 {
+  margin: 6px 0;
+  font-weight: 600;
+}
+
+.upi-header span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.amount-display {
+  margin: 20px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #60a5fa;
+}
+
+.qr-box {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 20px 0;
+}
+
+.qr-box img {
+  width: 220px;
+  height: 220px;
+}
+
+.upload-section input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 12px;
+}
+
+.verify-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg,#22c55e,#16a34a);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secure-text {
+  margin-top: 15px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.fade {
+  animation: fadeIn 0.4s ease;
+}
+
+.preview-img {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.secondary-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  background: #e5e7eb;
+  cursor: pointer;
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}

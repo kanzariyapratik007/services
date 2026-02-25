@@ -1,0 +1,58 @@
+.manual-page {
+  padding: 40px;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+.manual-page h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.price-box {
+  background: #d4edda;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #155724;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #6a11cb;
+}
+
+.submit-btn {
+  background: #2575fc;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #1a5edb;
+}

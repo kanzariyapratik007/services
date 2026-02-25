@@ -1,0 +1,128 @@
+/* ===== PAGE BACKGROUND ===== */
+.print-page {
+  padding: 50px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  min-height: 100vh;
+}
+
+/* ===== TITLE ===== */
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== GRID ===== */
+.print-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.print-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 35px 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color:black;
+}
+
+.print-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(106,17,203,0.08), transparent 70%);
+  transform: rotate(25deg);
+  transition: 0.5s;
+}
+
+.print-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+.print-card:hover::before {
+  transform: rotate(0deg);
+}
+
+/* ===== ICON ===== */
+.print-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(106, 17, 203, 0.3);
+}
+
+.print-card:hover .print-icon {
+  transform: scale(1.1) rotate(8deg);
+}
+
+/* ===== TEXT ===== */
+.print-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 18px;
+}
+
+/* ===== BADGES ===== */
+.badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.badge.green {
+  background: linear-gradient(135deg, #d4edda, #b7e4c7);
+  color: #155724;
+}
+
+.badge.yellow {
+  background: linear-gradient(135deg, #fff3cd, #ffe69c);
+  color: #856404;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .print-page {
+    padding: 25px;
+  }
+
+  .page-title {
+    font-size: 22px;
+  }
+
+  .print-card {
+    padding: 25px;
+  }
+
+  .print-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+  }
+}

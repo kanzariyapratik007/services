@@ -1,0 +1,147 @@
+/* ================= SIDEBAR BASE ================= */
+
+.sidebar {
+  width: 270px;
+  height: 100vh;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
+  color: #1e293b;
+
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* soft right accent glow */
+.sidebar::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0ea5e9, #14b8a6);
+  border-radius: 4px;
+}
+
+/* ================= LOGO ================= */
+
+.sidebar .logo {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+
+  background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.sidebar .section-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin: 25px 0 12px 6px;
+  letter-spacing: 1.5px;
+}
+
+/* ================= MENU ================= */
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .menu li {
+  margin-bottom: 10px;
+}
+
+/* ================= LINKS ================= */
+
+.sidebar .menu a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 13px 16px;
+  border-radius: 14px;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+
+  transition: all 0.25s ease;
+}
+
+/* icon styling */
+.sidebar .menu a svg {
+  font-size: 17px;
+  transition: 0.25s ease;
+  color: #64748b;
+}
+
+/* hover effect */
+.sidebar .menu a:hover {
+  background: linear-gradient(135deg, #e0f2fe, #ccfbf1);
+  transform: translateX(6px);
+  color: #0f172a;
+}
+
+/* hover icon color */
+.sidebar .menu a:hover svg {
+  color: #0ea5e9;
+}
+
+/* active state */
+.sidebar .menu a.active {
+  background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(20, 184, 166, 0.25);
+}
+
+/* active icon */
+.sidebar .menu a.active svg {
+  color: white;
+}
+
+/* ================= LOGOUT ================= */
+
+.sidebar .logout {
+  margin-top: auto;
+}
+
+.sidebar .logout a {
+  color: #ef4444;
+}
+
+.sidebar .logout a:hover {
+  background: #fee2e2;
+  transform: translateX(6px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 220px;
+    padding: 25px 16px;
+  }
+}
+
+.sidebar .logo {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sidebar .logo img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}

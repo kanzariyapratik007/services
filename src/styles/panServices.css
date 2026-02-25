@@ -1,0 +1,72 @@
+.pan-page {
+  padding: 20px;
+}
+
+.pan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.pan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.pan-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.pan-card:hover {
+  transform: translateY(-5px);
+}
+
+.pan-icon {
+  width: 70px;
+  height: 70px;
+  background: #f3f3f3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.auto {
+  background: #d1f7e0;
+  color: #0a7d3b;
+}
+
+.manual {
+  background: #ffe4cc;
+  color: #c05600;
+}
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
